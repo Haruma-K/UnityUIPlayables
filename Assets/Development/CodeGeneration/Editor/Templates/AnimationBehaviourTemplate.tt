@@ -1,0 +1,18 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using System;
+using UnityEngine;
+
+namespace UnityUIPlayables
+{
+    [Serializable]
+    public class <# Write(_bindingName); #>AnimationBehaviour : AnimationBehaviour
+    {
+        [SerializeField] private <# Write(_bindingName); #>AnimationValue _startValue;
+        [SerializeField] private <# Write(_bindingName); #>AnimationValue _endValue;
+
+        public <# Write(_bindingName); #>AnimationValue StartValue => _startValue;
+        public <# Write(_bindingName); #>AnimationValue EndValue => _endValue;
+    }
+}

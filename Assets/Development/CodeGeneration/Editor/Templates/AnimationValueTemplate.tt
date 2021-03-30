@@ -1,0 +1,14 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using System;
+using UnityEngine;
+
+namespace UnityUIPlayables
+{
+    [Serializable]
+    public class <# Write(_bindingName); #>AnimationValue
+    {
+        //TODO Write code here
+    }
+}

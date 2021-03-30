@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using UnityEditor;
+
+namespace UnityUIPlayables.Editor
+{
+    [CustomPropertyDrawer(typeof(<# Write(_bindingName); #>AnimationBehaviour))]
+    public class <# Write(_bindingName); #>AnimationBehaviourDrawer : PlayableBehaviourDrawer
+    {
+    }
+}

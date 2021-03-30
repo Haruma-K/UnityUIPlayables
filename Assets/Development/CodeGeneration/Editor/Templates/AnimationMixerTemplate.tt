@@ -1,0 +1,27 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace UnityUIPlayables
+{
+    public class <# Write(_bindingName); #>AnimationMixer : AnimationMixer<<# Write(_bindingName); #>, <# Write(_bindingName); #>AnimationBehaviour>
+    {
+        public override void SetupFrame(<# Write(_bindingName); #> binding)
+        {
+            base.SetupFrame(binding);
+            //TODO Write code here.
+        }
+
+        public override void Blend(<# Write(_bindingName); #>AnimationBehaviour behaviour, float inputWeight, float progress)
+        {
+            //TODO Write code here.
+        }
+
+        public override void ApplyFrame()
+        {
+            //TODO Write code here.
+        }
+    }
+}

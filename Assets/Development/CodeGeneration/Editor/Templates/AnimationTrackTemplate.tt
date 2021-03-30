@@ -1,0 +1,16 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using UnityEngine.Timeline;
+using UnityEngine.UI;
+
+namespace UnityUIPlayables
+{
+    [TrackColor(0.1098f, 0.3529f, 0.8392f)]
+    [TrackClipType(typeof(<# Write(_bindingName); #>AnimationClip))]
+    [TrackBindingType(typeof(<# Write(_bindingName); #>))]
+    public class <# Write(_bindingName); #>AnimationTrack
+        : AnimationTrack<<# Write(_bindingName); #>, <# Write(_bindingName); #>AnimationMixer, <# Write(_bindingName); #>AnimationMixerBehaviour, <# Write(_bindingName); #>AnimationBehaviour>
+    {
+    }
+}
