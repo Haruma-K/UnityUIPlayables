@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace CodeGeneration.Editor.Templates
+namespace Development.CodeGeneration.Editor.Templates
 {
     using System.Text;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CodeGeneration.Editor.Templates
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
     public partial class AnimationTrackTemplate : AnimationTrackTemplateBase
     {
@@ -29,49 +29,49 @@ namespace CodeGeneration.Editor.Templates
         {
             this.Write("using UnityEngine.Timeline;\r\nusing UnityEngine.UI;\r\n\r\nnamespace UnityUIPlayables\r\n{\r\n    [TrackColor(0.1098f, 0.3529f, 0.8392f)]\r\n    [TrackClipType(typeof(");
             
-            #line 10 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 10 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationClip))]\r\n    [TrackBindingType(typeof(");
             
-            #line 11 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 11 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("))]\r\n    public class ");
             
-            #line 12 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 12 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationTrack\r\n        : AnimationTrack<");
             
-            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write(", ");
             
-            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationMixer, ");
             
-            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationMixerBehaviour, ");
             
-            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
+            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationTrackTemplate.tt"
  Write(_bindingName); 
             
             #line default

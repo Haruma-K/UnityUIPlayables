@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace CodeGeneration.Editor.Templates
+namespace Development.CodeGeneration.Editor.Templates
 {
     using System.Text;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CodeGeneration.Editor.Templates
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
     public partial class AnimationBehaviourTemplate : AnimationBehaviourTemplateBase
     {
@@ -29,35 +29,35 @@ namespace CodeGeneration.Editor.Templates
         {
             this.Write("using System;\r\nusing UnityEngine;\r\n\r\nnamespace UnityUIPlayables\r\n{\r\n    [Serializable]\r\n    public class ");
             
-            #line 10 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+            #line 10 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationBehaviour : AnimationBehaviour\r\n    {\r\n        [SerializeField] private ");
             
-            #line 12 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+            #line 12 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationValue _startValue;\r\n        [SerializeField] private ");
             
-            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+            #line 13 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationValue _endValue;\r\n\r\n        public ");
             
-            #line 15 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+            #line 15 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationValue StartValue => _startValue;\r\n        public ");
             
-            #line 16 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
+            #line 16 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default

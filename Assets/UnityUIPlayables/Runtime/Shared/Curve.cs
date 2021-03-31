@@ -1,10 +1,11 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace UnityUIPlayables
 {
     [Serializable]
-    internal class Curve
+    public class Curve
     {
         [SerializeField] private CurveType _curveType;
         
@@ -18,6 +19,9 @@ namespace UnityUIPlayables
 
         public float Evaluate(float progress)
         {
+            Assert.IsTrue(progress >= 0.0f);
+            Assert.IsTrue(progress <= 1.0f);
+            
             switch (_curveType)
             {
                 case CurveType.Easing:

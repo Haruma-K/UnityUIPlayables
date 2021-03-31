@@ -1,4 +1,4 @@
-﻿namespace CodeGeneration.Editor.Templates
+﻿namespace Development.CodeGeneration.Editor.Templates
 {
     public partial class AnimationMixerTemplate
     {

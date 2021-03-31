@@ -17,9 +17,9 @@ namespace Development.CodeGeneration.Editor.Templates
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
+    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationClipEditorTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public partial class AnimationMixerTemplate : AnimationMixerTemplateBase
+    public partial class AnimationClipEditorTemplate : AnimationClipEditorTemplateBase
     {
 #line hidden
         /// <summary>
@@ -27,42 +27,28 @@ namespace Development.CodeGeneration.Editor.Templates
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("using UnityEngine;\r\nusing UnityEngine.UI;\r\n\r\nnamespace UnityUIPlayables\r\n{\r\n    public class ");
+            this.Write("using UnityEditor.Timeline;\r\n\r\nnamespace UnityUIPlayables.Editor\r\n{\r\n    [CustomTimelineEditor(typeof(");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
+            #line 8 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationClipEditorTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
-            this.Write("AnimationMixer : AnimationMixer<");
+            this.Write("AnimationClip))]\r\n    public class ");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationClipEditorTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
-            this.Write(", ");
+            this.Write("AnimationClipEditor : AnimationTimelineClipEditor<");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationClipEditorTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
-            this.Write("AnimationBehaviour>\r\n    {\r\n        public override void SetupFrame(");
-            
-            #line 11 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
- Write(_bindingName); 
-            
-            #line default
-            #line hidden
-            this.Write(" binding)\r\n        {\r\n            base.SetupFrame(binding);\r\n            //TODO Write code here.\r\n        }\r\n\r\n        public override void Blend(");
-            
-            #line 17 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerTemplate.tt"
- Write(_bindingName); 
-            
-            #line default
-            #line hidden
-            this.Write("AnimationBehaviour behaviour, float inputWeight, float progress)\r\n        {\r\n            //TODO Write code here.\r\n        }\r\n\r\n        public override void ApplyFrame()\r\n        {\r\n            //TODO Write code here.\r\n        }\r\n    }\r\n}");
+            this.Write("AnimationBehaviour>\r\n    {\r\n    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -74,7 +60,7 @@ namespace Development.CodeGeneration.Editor.Templates
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
-    public class AnimationMixerTemplateBase
+    public class AnimationClipEditorTemplateBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

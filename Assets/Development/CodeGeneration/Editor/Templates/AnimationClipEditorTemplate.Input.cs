@@ -1,10 +1,10 @@
 ﻿namespace Development.CodeGeneration.Editor.Templates
 {
-    public partial class AnimationBehaviourDrawerTemplate
+    public partial class AnimationClipEditorTemplate
     {
         private readonly string _bindingName;
 
-        public AnimationBehaviourDrawerTemplate(string bindingName)
+        public AnimationClipEditorTemplate(string bindingName)
         {
             _bindingName = bindingName;
         }

@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using CodeGeneration.Editor.Templates;
+using Development.CodeGeneration.Editor.Templates;
 using UnityEditor;
 using UnityEngine;
 
@@ -65,6 +65,10 @@ namespace UnityUIPlayables.Editor
             var animationBehaviourDrawerFilePath = $"{editorFolderPath}/{_bindingName}AnimationBehaviourDrawer.cs";
             var animationBehaviourDrawerContents = new AnimationBehaviourDrawerTemplate(_bindingName).TransformText();
             File.WriteAllText(animationBehaviourDrawerFilePath, animationBehaviourDrawerContents);
+
+            var animationClipEditorFilePath = $"{editorFolderPath}/{_bindingName}AnimationClipEditor.cs";
+            var animationClipEditorContents = new AnimationClipEditorTemplate(_bindingName).TransformText();
+            File.WriteAllText(animationClipEditorFilePath, animationClipEditorContents);
             
             AssetDatabase.Refresh();
         }

@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace CodeGeneration.Editor.Templates
+namespace Development.CodeGeneration.Editor.Templates
 {
     using System.Text;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CodeGeneration.Editor.Templates
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
+    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
     public partial class AnimationMixerBehaviourTemplate : AnimationMixerBehaviourTemplateBase
     {
@@ -29,28 +29,28 @@ namespace CodeGeneration.Editor.Templates
         {
             this.Write("using UnityEngine.UI;\r\n\r\nnamespace UnityUIPlayables\r\n{\r\n    public class ");
             
-            #line 8 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
+            #line 8 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationMixerBehaviour\r\n        : AnimationMixerBehaviour<");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write(", ");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationMixer, ");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationMixerBehaviourTemplate.tt"
  Write(_bindingName); 
             
             #line default

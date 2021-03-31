@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace CodeGeneration.Editor.Templates
+namespace Development.CodeGeneration.Editor.Templates
 {
     using System.Text;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CodeGeneration.Editor.Templates
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
+    #line 1 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
     public partial class AnimationBehaviourDrawerTemplate : AnimationBehaviourDrawerTemplateBase
     {
@@ -29,14 +29,14 @@ namespace CodeGeneration.Editor.Templates
         {
             this.Write("using UnityEditor;\r\n\r\nnamespace UnityUIPlayables.Editor\r\n{\r\n    [CustomPropertyDrawer(typeof(");
             
-            #line 8 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
+            #line 8 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
  Write(_bindingName); 
             
             #line default
             #line hidden
             this.Write("AnimationBehaviour))]\r\n    public class ");
             
-            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
+            #line 9 "F:\Documents\Unity\UnityUIPlayables\Assets\Development\CodeGeneration\Editor\Templates\AnimationBehaviourDrawerTemplate.tt"
  Write(_bindingName); 
             
             #line default

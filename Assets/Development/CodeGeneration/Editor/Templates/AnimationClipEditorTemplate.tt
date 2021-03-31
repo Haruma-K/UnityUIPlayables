@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+using UnityEditor.Timeline;
+
+namespace UnityUIPlayables.Editor
+{
+    [CustomTimelineEditor(typeof(<# Write(_bindingName); #>AnimationClip))]
+    public class <# Write(_bindingName); #>AnimationClipEditor : AnimationTimelineClipEditor<<# Write(_bindingName); #>AnimationBehaviour>
+    {
+    }
+}

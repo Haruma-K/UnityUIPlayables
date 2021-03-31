@@ -6,7 +6,7 @@ using UnityEngine.Timeline;
 namespace UnityUIPlayables
 {
     [Serializable]
-    public class AnimationTimelineClip<TAnimationBehaviour> : PlayableAsset, ITimelineClipAsset
+    public abstract class AnimationTimelineClip<TAnimationBehaviour> : PlayableAsset, ITimelineClipAsset
         where TAnimationBehaviour : AnimationBehaviour, new()
     {
         public TAnimationBehaviour template = new TAnimationBehaviour();
