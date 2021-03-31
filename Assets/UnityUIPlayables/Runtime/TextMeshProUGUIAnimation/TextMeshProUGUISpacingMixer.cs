@@ -32,6 +32,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(TextMeshProUGUI binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedCharacter += binding.characterSpacing * (1f - _totalWeight);
             _blendedLine += binding.lineSpacing * (1f - _totalWeight);
             _blendedWord += binding.wordSpacing * (1f - _totalWeight);

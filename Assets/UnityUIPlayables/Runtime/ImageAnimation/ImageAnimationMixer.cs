@@ -16,8 +16,15 @@ namespace UnityUIPlayables
 
         public override void Blend(ImageAnimationBehaviour behaviour, float inputWeight, float progress)
         {
-            _colorMixer.Blend(behaviour.StartValue.Color, behaviour.EndValue.Color, inputWeight, progress);
-            _fillAmountMixer.Blend(behaviour.StartValue.FillAmount, behaviour.EndValue.FillAmount, inputWeight, progress);
+            if (behaviour.ControlColor)
+            {
+                _colorMixer.Blend(behaviour.StartValue.Color, behaviour.EndValue.Color, inputWeight, progress);
+            }
+
+            if (behaviour.ControlFillAmount)
+            {
+                _fillAmountMixer.Blend(behaviour.StartValue.FillAmount, behaviour.EndValue.FillAmount, inputWeight, progress);
+            }
         }
 
         public override void ApplyFrame()

@@ -21,6 +21,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(RectTransform binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.sizeDelta * (1f - _totalWeight);
             binding.sizeDelta = _blendedValue;
         }

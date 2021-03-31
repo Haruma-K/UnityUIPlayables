@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(Text binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.lineSpacing * (1f - _totalWeight);
             binding.lineSpacing = _blendedValue;
         }

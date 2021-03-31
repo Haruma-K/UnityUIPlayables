@@ -31,6 +31,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(TextMeshProUGUI binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedTopLeft += binding.colorGradient.topLeft * (1f - _totalWeight);
             _blendedTopRight += binding.colorGradient.topRight * (1f - _totalWeight);
             _blendedBottomLeft += binding.colorGradient.bottomLeft * (1f - _totalWeight);

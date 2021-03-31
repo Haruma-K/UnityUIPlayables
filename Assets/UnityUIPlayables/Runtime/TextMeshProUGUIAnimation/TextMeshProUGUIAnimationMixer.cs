@@ -51,19 +51,19 @@ namespace UnityUIPlayables
                 _spacingMixer.Blend(behaviour.StartValue.Spacing, behaviour.EndValue.Spacing, inputWeight, progress);
             }
 
-            if (behaviour.ControlFaceColor)
+            if (behaviour.ControlRuntimeFaceColor)
             {
                 _faceColorMixer.Blend(behaviour.StartValue.FaceColor, behaviour.EndValue.FaceColor, inputWeight,
                     progress);
             }
 
-            if (behaviour.ControlOutlineColor)
+            if (behaviour.ControlRuntimeOutlineColor)
             {
                 _outlineColorMixer.Blend(behaviour.StartValue.OutlineColor, behaviour.EndValue.OutlineColor,
                     inputWeight, progress);
             }
 
-            if (behaviour.ControlOutlineWidth)
+            if (behaviour.ControlRuntimeOutlineWidth)
             {
                 _outlineWidthMixer.Blend(behaviour.StartValue.OutlineWidth, behaviour.EndValue.OutlineWidth,
                     inputWeight, progress);

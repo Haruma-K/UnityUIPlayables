@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(TextMeshProUGUI binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.fontSize * (1f - _totalWeight);
             binding.fontSize = _blendedValue;
         }

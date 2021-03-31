@@ -21,6 +21,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(CanvasGroup binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.alpha * (1f - _totalWeight);
             binding.alpha = _blendedValue;
         }

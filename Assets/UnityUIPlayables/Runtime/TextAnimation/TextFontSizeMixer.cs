@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(Text binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += (int) (binding.fontSize * (1f - _totalWeight));
             binding.fontSize = _blendedValue;
         }

@@ -10,9 +10,9 @@ namespace UnityUIPlayables
         [SerializeField] private bool _controlColor;
         [SerializeField] private bool _controlVertexGradient;
         [SerializeField] private bool _controlSpacing;
-        [SerializeField] private bool _controlFaceColor;
-        [SerializeField] private bool _controlOutlineColor;
-        [SerializeField] private bool _controlOutlineWidth;
+        [SerializeField] private bool _controlRuntimeFaceColor;
+        [SerializeField] private bool _controlRuntimeOutlineColor;
+        [SerializeField] private bool _controlRuntimeOutlineWidth;
         [SerializeField] private TextMeshProUGUIAnimationValue _startValue;
         [SerializeField] private TextMeshProUGUIAnimationValue _endValue;
 
@@ -24,11 +24,11 @@ namespace UnityUIPlayables
 
         public bool ControlSpacing => _controlSpacing;
 
-        public bool ControlFaceColor => _controlFaceColor;
+        public bool ControlRuntimeFaceColor => _controlRuntimeFaceColor;
 
-        public bool ControlOutlineColor => _controlOutlineColor;
+        public bool ControlRuntimeOutlineColor => _controlRuntimeOutlineColor;
 
-        public bool ControlOutlineWidth => _controlOutlineWidth;
+        public bool ControlRuntimeOutlineWidth => _controlRuntimeOutlineWidth;
         public TextMeshProUGUIAnimationValue StartValue => _startValue;
         public TextMeshProUGUIAnimationValue EndValue => _endValue;
     }

@@ -21,6 +21,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(RectTransform binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.anchoredPosition3D * (1f - _totalWeight);
             binding.anchoredPosition3D = _blendedValue;
         }

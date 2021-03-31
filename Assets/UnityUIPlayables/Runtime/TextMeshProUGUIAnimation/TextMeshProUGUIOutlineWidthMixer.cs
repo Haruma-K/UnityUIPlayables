@@ -22,6 +22,15 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(TextMeshProUGUI binding)
         {
+            // Only at runtime, as a material instance will be created.
+            if (!Application.isPlaying)
+            {
+                return;
+            }
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.fontSize * (1f - _totalWeight);
             binding.outlineWidth = _blendedValue;
         }

@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(Slider binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.value * (1f - _totalWeight);
             binding.value = _blendedValue;
         }

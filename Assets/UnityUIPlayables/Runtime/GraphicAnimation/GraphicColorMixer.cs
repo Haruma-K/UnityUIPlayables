@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(Graphic binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.color * (1f - _totalWeight);
             binding.color = _blendedValue;
         }

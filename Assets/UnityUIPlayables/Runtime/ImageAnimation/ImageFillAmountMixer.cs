@@ -22,6 +22,10 @@ namespace UnityUIPlayables
 
         public void ApplyFrame(Image binding)
         {
+            if (_totalWeight == 0)
+            {
+                return;
+            }
             _blendedValue += binding.fillAmount * (1f - _totalWeight);
             binding.fillAmount = _blendedValue;
         }
