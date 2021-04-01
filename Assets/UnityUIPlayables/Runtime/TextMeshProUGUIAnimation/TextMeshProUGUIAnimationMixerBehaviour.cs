@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEngine.UI;
 
 namespace UnityUIPlayables
 {

@@ -16,7 +16,7 @@ namespace UnityUIPlayables
 
         public void Blend(int startValue, int endValue, float inputWeight, float progress)
         {
-            _blendedValue += (int)(Mathf.Lerp(startValue, endValue, progress) * inputWeight);
+            _blendedValue += (int) (Mathf.Lerp(startValue, endValue, progress) * inputWeight);
             _totalWeight += inputWeight;
         }
 
@@ -26,6 +26,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += (int) (binding.fontSize * (1f - _totalWeight));
             binding.fontSize = _blendedValue;
         }

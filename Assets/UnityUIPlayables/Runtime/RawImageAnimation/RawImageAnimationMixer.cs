@@ -20,6 +20,7 @@ namespace UnityUIPlayables
             {
                 _colorMixer.Blend(behaviour.StartValue.Color, behaviour.EndValue.Color, inputWeight, progress);
             }
+
             if (behaviour.ControlUvRect)
             {
                 _uvRectMixer.Blend(behaviour.StartValue.UvRect, behaviour.EndValue.UvRect, inputWeight, progress);

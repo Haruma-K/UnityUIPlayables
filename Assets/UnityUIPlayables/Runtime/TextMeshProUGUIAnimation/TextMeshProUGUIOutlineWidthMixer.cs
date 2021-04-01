@@ -27,10 +27,12 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             if (_totalWeight == 0)
             {
                 return;
             }
+
             _blendedValue += binding.fontSize * (1f - _totalWeight);
             binding.outlineWidth = _blendedValue;
         }

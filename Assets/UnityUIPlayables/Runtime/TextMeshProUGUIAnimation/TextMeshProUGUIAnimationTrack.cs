@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine.Timeline;
-using UnityEngine.UI;
 
 namespace UnityUIPlayables
 {
@@ -8,7 +7,8 @@ namespace UnityUIPlayables
     [TrackClipType(typeof(TextMeshProUGUIAnimationClip))]
     [TrackBindingType(typeof(TextMeshProUGUI))]
     public class TextMeshProUGUIAnimationTrack
-        : AnimationTrack<TextMeshProUGUI, TextMeshProUGUIAnimationMixer, TextMeshProUGUIAnimationMixerBehaviour, TextMeshProUGUIAnimationBehaviour>
+        : AnimationTrack<TextMeshProUGUI, TextMeshProUGUIAnimationMixer, TextMeshProUGUIAnimationMixerBehaviour,
+            TextMeshProUGUIAnimationBehaviour>
     {
     }
 }

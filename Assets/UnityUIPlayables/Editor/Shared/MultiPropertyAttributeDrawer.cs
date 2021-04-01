@@ -49,7 +49,7 @@ namespace UnityUIPlayables.Editor
             {
                 return -EditorGUIUtility.standardVerticalSpacing;
             }
-            
+
             var height = propertyDrawers.Length == 0
                 ? EditorGUI.GetPropertyHeight(property, label, true)
                 : propertyDrawers.Last().GetPropertyHeight(property, label);

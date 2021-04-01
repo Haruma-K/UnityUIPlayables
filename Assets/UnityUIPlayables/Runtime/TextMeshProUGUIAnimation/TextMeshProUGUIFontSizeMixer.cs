@@ -26,6 +26,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.fontSize * (1f - _totalWeight);
             binding.fontSize = _blendedValue;
         }

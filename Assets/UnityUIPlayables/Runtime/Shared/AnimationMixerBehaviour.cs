@@ -27,8 +27,8 @@ namespace UnityUIPlayables
                 var behaviour = playableInput.GetBehaviour();
 
                 var inputWeight = playable.GetInputWeight(i);
-                var time = (float)playableInput.GetTime();
-                var duration = (float)playableInput.GetDuration();
+                var time = (float) playableInput.GetTime();
+                var duration = (float) playableInput.GetDuration();
                 var progress = behaviour.EvaluateCurve(time, duration);
 
                 if (inputWeight == 0)

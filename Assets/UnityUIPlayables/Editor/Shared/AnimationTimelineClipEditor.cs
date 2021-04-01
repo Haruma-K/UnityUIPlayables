@@ -8,7 +8,7 @@ namespace UnityUIPlayables.Editor
         where TAnimationBehaviour : AnimationBehaviour, new()
     {
         private Texture2D _pointTexture;
-        
+
         public override void OnCreate(TimelineClip clip, TrackAsset track, TimelineClip clonedFrom)
         {
         }
@@ -16,7 +16,7 @@ namespace UnityUIPlayables.Editor
         public override void OnClipChanged(TimelineClip clip)
         {
         }
-        
+
         public override void DrawBackground(TimelineClip clip, ClipBackgroundRegion region)
         {
             var animationTimelineClip = (AnimationTimelineClip<TAnimationBehaviour>) clip.asset;
@@ -27,7 +27,7 @@ namespace UnityUIPlayables.Editor
             {
                 return;
             }
-            
+
             if (_pointTexture == null)
             {
                 _pointTexture = Resources.Load<Texture2D>("tex_unityuiplayables_icon_diamond");
@@ -38,7 +38,7 @@ namespace UnityUIPlayables.Editor
             position.width = 12;
             position.height = 12;
             position.y += position.height / 2;
-            var lengthPerLoop = (float)(region.position.width * loopDuration / duration);
+            var lengthPerLoop = (float) (region.position.width * loopDuration / duration);
             while (true)
             {
                 time += loopDuration;
@@ -46,14 +46,13 @@ namespace UnityUIPlayables.Editor
                 {
                     position.x += lengthPerLoop;
                     GUI.DrawTexture(position, _pointTexture, ScaleMode.ScaleToFit, true, 1, Color.grey, Vector4.zero,
-                     Vector4.zero);
+                        Vector4.zero);
                 }
                 else
                 {
                     break;
                 }
             }
-            
         }
     }
 }

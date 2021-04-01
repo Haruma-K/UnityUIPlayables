@@ -25,6 +25,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.alpha * (1f - _totalWeight);
             binding.alpha = _blendedValue;
         }

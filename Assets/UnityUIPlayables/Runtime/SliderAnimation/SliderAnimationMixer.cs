@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.UI;
 
 namespace UnityUIPlayables
@@ -6,7 +5,7 @@ namespace UnityUIPlayables
     public class SliderAnimationMixer : AnimationMixer<Slider, SliderAnimationBehaviour>
     {
         private readonly SliderValueMixer _valueMixer = new SliderValueMixer();
-        
+
         public override void SetupFrame(Slider binding)
         {
             base.SetupFrame(binding);

@@ -26,6 +26,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.lineSpacing * (1f - _totalWeight);
             binding.lineSpacing = _blendedValue;
         }

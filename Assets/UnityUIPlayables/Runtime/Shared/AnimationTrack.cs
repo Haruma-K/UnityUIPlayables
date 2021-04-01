@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 namespace UnityUIPlayables
 {
-    public abstract class AnimationTrack<TBinding, TValueMixer, TAnimationMixerBehaviour, TAnimationBehaviour> : TrackAsset
+    public abstract class
+        AnimationTrack<TBinding, TValueMixer, TAnimationMixerBehaviour, TAnimationBehaviour> : TrackAsset
         where TAnimationMixerBehaviour : AnimationMixerBehaviour<TBinding, TValueMixer, TAnimationBehaviour>, new()
         where TValueMixer : AnimationMixer<TBinding, TAnimationBehaviour>, new()
         where TBinding : Component
@@ -24,7 +26,7 @@ namespace UnityUIPlayables
                 return;
             }
 
-            var so = new UnityEditor.SerializedObject(component);
+            var so = new SerializedObject(component);
             var iterator = so.GetIterator();
             while (iterator.NextVisible(true))
             {

@@ -27,10 +27,12 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             if (_totalWeight == 0)
             {
                 return;
             }
+
             _blendedValue += binding.color * (1f - _totalWeight);
             binding.faceColor = _blendedValue;
         }

@@ -6,7 +6,7 @@ namespace UnityUIPlayables
     {
         private readonly GraphicColorMixer _colorMixer = new GraphicColorMixer();
         private readonly ImageFillAmountMixer _fillAmountMixer = new ImageFillAmountMixer();
-        
+
         public override void SetupFrame(Image binding)
         {
             base.SetupFrame(binding);
@@ -23,7 +23,8 @@ namespace UnityUIPlayables
 
             if (behaviour.ControlFillAmount)
             {
-                _fillAmountMixer.Blend(behaviour.StartValue.FillAmount, behaviour.EndValue.FillAmount, inputWeight, progress);
+                _fillAmountMixer.Blend(behaviour.StartValue.FillAmount, behaviour.EndValue.FillAmount, inputWeight,
+                    progress);
             }
         }
 

@@ -7,7 +7,9 @@ namespace UnityUIPlayables
     [Serializable]
     public abstract class AnimationBehaviour : PlayableBehaviour
     {
-        [SerializeField] private float _loopDuration;
+        [SerializeField] [Tooltip("When set to zero, the length of one loop equals the length of the clip.")]
+        private float _loopDuration;
+
         [SerializeField] private LoopType _loopType;
         [SerializeField] private Curve _curve;
 
@@ -32,6 +34,7 @@ namespace UnityUIPlayables
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
             return _curve.Evaluate(progress);
         }
     }

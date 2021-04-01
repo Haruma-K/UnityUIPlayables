@@ -25,6 +25,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.anchoredPosition3D * (1f - _totalWeight);
             binding.anchoredPosition3D = _blendedValue;
         }

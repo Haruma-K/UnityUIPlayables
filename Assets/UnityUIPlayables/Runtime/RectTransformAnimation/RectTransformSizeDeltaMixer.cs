@@ -25,6 +25,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.sizeDelta * (1f - _totalWeight);
             binding.sizeDelta = _blendedValue;
         }

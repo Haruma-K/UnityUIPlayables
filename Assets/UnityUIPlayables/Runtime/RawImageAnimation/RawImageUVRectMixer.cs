@@ -29,6 +29,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedPosition += binding.uvRect.position * (1f - _totalWeight);
             _blendedSize += binding.uvRect.size * (1f - _totalWeight);
             binding.uvRect = new Rect(_blendedPosition, _blendedSize);

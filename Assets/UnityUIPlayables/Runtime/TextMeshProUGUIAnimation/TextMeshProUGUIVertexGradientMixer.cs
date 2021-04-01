@@ -5,10 +5,10 @@ namespace UnityUIPlayables
 {
     public class TextMeshProUGUIVertexGradientMixer
     {
-        private Color _blendedTopLeft;
-        private Color _blendedTopRight;
         private Color _blendedBottomLeft;
         private Color _blendedBottomRight;
+        private Color _blendedTopLeft;
+        private Color _blendedTopRight;
         private float _totalWeight;
 
         public void SetupFrame()
@@ -35,6 +35,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedTopLeft += binding.colorGradient.topLeft * (1f - _totalWeight);
             _blendedTopRight += binding.colorGradient.topRight * (1f - _totalWeight);
             _blendedBottomLeft += binding.colorGradient.bottomLeft * (1f - _totalWeight);

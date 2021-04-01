@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.UI;
 
 namespace UnityUIPlayables
@@ -8,7 +7,7 @@ namespace UnityUIPlayables
         private readonly GraphicColorMixer _colorMixer = new GraphicColorMixer();
         private readonly TextFontSizeMixer _fontSizeMixer = new TextFontSizeMixer();
         private readonly TextLineSpacingMixer _lineSpacingMixer = new TextLineSpacingMixer();
-        
+
         public override void SetupFrame(Text binding)
         {
             base.SetupFrame(binding);
@@ -23,12 +22,12 @@ namespace UnityUIPlayables
             {
                 _colorMixer.Blend(behaviour.StartValue.Color, behaviour.EndValue.Color, inputWeight, progress);
             }
-            
+
             if (behaviour.ControlFontSize)
             {
                 _fontSizeMixer.Blend(behaviour.StartValue.FontSize, behaviour.EndValue.FontSize, inputWeight, progress);
             }
-            
+
             if (behaviour.ControlLineSpacing)
             {
                 _lineSpacingMixer.Blend(behaviour.StartValue.LineSpacing, behaviour.EndValue.LineSpacing, inputWeight,

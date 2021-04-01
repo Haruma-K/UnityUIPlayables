@@ -25,6 +25,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedValue += binding.localScale * (1f - _totalWeight);
             binding.localScale = _blendedValue;
         }

@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace UnityUIPlayables
 {
     public class CanvasGroupAnimationMixer : AnimationMixer<CanvasGroup, CanvasGroupAnimationBehaviour>
     {
         private readonly CanvasGroupAlphaMixer _alphaMixer = new CanvasGroupAlphaMixer();
-        
+
         public override void SetupFrame(CanvasGroup binding)
         {
             base.SetupFrame(binding);

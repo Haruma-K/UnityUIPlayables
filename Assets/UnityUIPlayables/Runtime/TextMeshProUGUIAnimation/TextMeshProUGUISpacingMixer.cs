@@ -7,8 +7,8 @@ namespace UnityUIPlayables
     {
         private float _blendedCharacter;
         private float _blendedLine;
-        private float _blendedWord;
         private float _blendedParagraph;
+        private float _blendedWord;
         private float _totalWeight;
 
         public void SetupFrame()
@@ -36,6 +36,7 @@ namespace UnityUIPlayables
             {
                 return;
             }
+
             _blendedCharacter += binding.characterSpacing * (1f - _totalWeight);
             _blendedLine += binding.lineSpacing * (1f - _totalWeight);
             _blendedWord += binding.wordSpacing * (1f - _totalWeight);
