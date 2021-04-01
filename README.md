@@ -64,3 +64,8 @@ The parameters can be controlled from the clip's inspector.
 |<b>Text (Text Mesh Pro)</b>|Font Size<br>Color<br>Gradient (Top Left / Top Right / Bottom Left / Bottom Right)<br>Spacing (Character / Line / Word / Paragraph)<br>Face Color (Only at Runtime)<br>Outline Color (Only at Runtime)<br>Outline Width (Only at Runtime)|
 |<b>Slider</b>|Value|
 |<b>Canvas Group</b>|Alpha|
+
+## Demo
+1. Clone this repository.
+2. Open and play the following scene.
+    * https://github.com/Haruma-K/UnityUIPlayables/blob/master/Assets/Demo/Scenes/Demo.unity
