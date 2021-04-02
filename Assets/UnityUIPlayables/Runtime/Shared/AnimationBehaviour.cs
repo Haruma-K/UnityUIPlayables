@@ -23,9 +23,13 @@ namespace UnityUIPlayables
         {
             var loopDuration = _loopDuration > 0 ? _loopDuration : duration;
             var progress = time / loopDuration;
+            var ret = Mathf.Floor(progress) % 2 != 0;
             switch (_loopType)
             {
                 case LoopType.Repeat:
+                    progress = Mathf.Repeat(progress, 1.0f);
+                    break;
+                case LoopType.Reverse:
                     progress = Mathf.Repeat(progress, 1.0f);
                     break;
                 case LoopType.PingPong:
@@ -35,7 +39,14 @@ namespace UnityUIPlayables
                     throw new ArgumentOutOfRangeException();
             }
 
-            return _curve.Evaluate(progress);
+            progress = _curve.Evaluate(progress);
+            
+            if (_loopType == LoopType.Reverse & ret)
+            {
+                progress = 1 - progress;
+            }
+
+            return progress;
         }
     }
 }

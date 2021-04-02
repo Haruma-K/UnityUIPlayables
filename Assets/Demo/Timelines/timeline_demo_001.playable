@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     _loopDuration: 0
-    _loopType: 1
+    _loopType: 0
     _curve:
       _curveType: 0
       _easeType: 0
@@ -1757,7 +1757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     _loopDuration: 0
-    _loopType: 1
+    _loopType: 0
     _curve:
       _curveType: 0
       _easeType: 0
@@ -1918,7 +1918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     _loopDuration: 0
-    _loopType: 1
+    _loopType: 0
     _curve:
       _curveType: 0
       _easeType: 0
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     _loopDuration: 0.5
-    _loopType: 1
+    _loopType: 2
     _curve:
       _curveType: 0
       _easeType: 9
@@ -2564,7 +2564,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2621,7 +2639,7 @@ MonoBehaviour:
     _loopType: 1
     _curve:
       _curveType: 0
-      _easeType: 6
+      _easeType: 29
       _animationCurve:
         serializedVersion: 2
         m_Curve: []
