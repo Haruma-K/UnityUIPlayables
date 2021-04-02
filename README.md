@@ -23,6 +23,8 @@ If you want to create complex animations, you can also use Animation Curves.
   <img width=500 src="https://user-images.githubusercontent.com/47441314/113312417-3a980580-9345-11eb-815b-96baf0f10189.png" alt="Easings and Animation Curve">
 </p>
 
+Looping of animations is also possible (Repeat, Reverse, and PingPong are supported as loop types).
+
 #### Blending
 All clips and all parameters are blendable.
 
