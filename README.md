@@ -1,6 +1,6 @@
 <h1 align="center">UnityUIPlayables</h1>
 
-A set of tracks and clips for controlling the Unity UI (uGUI) with Timeline.
+Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 
 <p align="center">
   <img width=700 src="https://user-images.githubusercontent.com/47441314/113313016-cf9afe80-9345-11eb-9aa9-422c53b5a3f8.gif" alt="Demo">
