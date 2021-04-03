@@ -16,8 +16,8 @@ Unity UI Playables allows you to control any uGUI components and its parameters 
 </p>
 
 #### Easings and Animation Curve
-You can easily set up animations using the easing function.  
-If you want to create complex animations, you can also use Animation Curves.
+You can easily set up animations using the easing functions.  
+If you want to create complex animations, you can also use Animation Curve.
 
 <p align="center">
   <img width=500 src="https://user-images.githubusercontent.com/47441314/113312417-3a980580-9345-11eb-815b-96baf0f10189.png" alt="Easings and Animation Curve">
