@@ -35,7 +35,7 @@ All clips and all parameters are blendable.
 ## Usage
 
 #### Install
-1. Open the Package Manager
+1. Open the Package Manager from Window > Package Manager
 2. "+" button > Add package from git URL
 3. Enter the following
     * https://github.com/Haruma-K/UnityUIPlayables.git?path=/Assets/UnityUIPlayables
@@ -45,9 +45,7 @@ All clips and all parameters are blendable.
 </p>
 
 
-or
-
-Open Packages/manifest.json and add the following to the dependencies block.
+Or, open Packages/manifest.json and add the following to the dependencies block.
 
 ```json
 {
@@ -57,7 +55,7 @@ Open Packages/manifest.json and add the following to the dependencies block.
 }
 ```
 
-If you want to set the target version, specify it as follow.
+If you want to set the target version, specify it like follow.
 * https://github.com/Haruma-K/UnityUIPlayables.git?path=/Assets/UnityUIPlayables#0.1.0
 
 #### Create Tracks and Clips
