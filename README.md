@@ -1,6 +1,6 @@
 <h1 align="center">UnityUIPlayables</h1>
 
-A set of tracks and clips for controlling the Unity UI (uGUI) with Timeline.
+Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 
 <p align="center">
   <img width=700 src="https://user-images.githubusercontent.com/47441314/113313016-cf9afe80-9345-11eb-9aa9-422c53b5a3f8.gif" alt="Demo">
@@ -16,12 +16,14 @@ Unity UI Playables allows you to control any uGUI components and its parameters 
 </p>
 
 #### Easings and Animation Curve
-You can easily set up animations using the easing function.  
-If you want to create complex animations, you can also use Animation Curves.
+You can easily set up animations using the easing functions.  
+If you want to create complex animations, you can also use Animation Curve.
 
 <p align="center">
   <img width=500 src="https://user-images.githubusercontent.com/47441314/113312417-3a980580-9345-11eb-815b-96baf0f10189.png" alt="Easings and Animation Curve">
 </p>
+
+Looping of animations is also possible (Repeat, Reverse, and PingPong are supported as loop types).
 
 #### Blending
 All clips and all parameters are blendable.
