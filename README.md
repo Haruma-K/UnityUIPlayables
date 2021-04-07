@@ -84,3 +84,6 @@ The parameters can be controlled from the clip's inspector.
 1. Clone this repository.
 2. Open and play the following scene.
     * https://github.com/Haruma-K/UnityUIPlayables/blob/master/Assets/Demo/Scenes/Demo.unity
+
+## Lisence
+This software is released under the MIT License, see LICENSE.md.
