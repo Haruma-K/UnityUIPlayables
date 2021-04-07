@@ -1,4 +1,4 @@
-<h1 align="center">UnityUIPlayables</h1>
+<h1 align="center">Unity UI Playables</h1>
 
 Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 
