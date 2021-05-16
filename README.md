@@ -32,7 +32,10 @@ All clips and all parameters are blendable.
   <img width=700 src="https://user-images.githubusercontent.com/47441314/113312482-4c79a880-9345-11eb-8e19-c6c85d2e1338.png" alt="Blending">
 </p>
 
-## Usage
+## Setup
+
+#### Requirement
+Unity 2019.4 or higher.
 
 #### Install
 1. Open the Package Manager from Window > Package Manager
@@ -57,6 +60,15 @@ Or, open Packages/manifest.json and add the following to the dependencies block.
 
 If you want to set the target version, specify it like follow.
 * https://github.com/Haruma-K/UnityUIPlayables.git?path=/Assets/UnityUIPlayables#0.1.0
+
+#### License
+This software is released under the MIT License.  
+You are free to use it within the scope of the license.  
+However, the following copyright and license notices are required for use.
+
+* https://github.com/Haruma-K/UnityUIPlayables/blob/master/LICENSE.md
+
+## Usage
 
 #### Create Tracks and Clips
 Press the add track button in Timeline and select the track below UnityUIPlayables.
@@ -84,6 +96,3 @@ The parameters can be controlled from the clip's inspector.
 1. Clone this repository.
 2. Open and play the following scene.
     * https://github.com/Haruma-K/UnityUIPlayables/blob/master/Assets/Demo/Scenes/Demo.unity
-
-## Lisence
-This software is released under the MIT License, see LICENSE.md.
