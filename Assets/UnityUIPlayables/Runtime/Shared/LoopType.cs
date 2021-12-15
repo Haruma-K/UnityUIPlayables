@@ -1,6 +1,9 @@
-﻿public enum LoopType
+﻿namespace UnityUIPlayables
 {
-    Repeat,
-    Reverse,
-    PingPong
+    public enum LoopType
+    {
+        Repeat,
+        Reverse,
+        PingPong
+    }
 }
