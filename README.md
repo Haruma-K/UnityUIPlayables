@@ -3,7 +3,7 @@
 Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 
 <p align="center">
-  <img width=700 src="https://user-images.githubusercontent.com/47441314/113313016-cf9afe80-9345-11eb-9aa9-422c53b5a3f8.gif" alt="Demo">
+  <img width="80%" src="https://user-images.githubusercontent.com/47441314/113313016-cf9afe80-9345-11eb-9aa9-422c53b5a3f8.gif" alt="Demo">
 </p>
 
 ## Features
@@ -12,7 +12,7 @@ Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 Unity UI Playables allows you to control any uGUI components and its parameters with Timeline.
 
 <p align="center">
-  <img width=700 src="https://user-images.githubusercontent.com/47441314/113312392-34098e00-9345-11eb-9ec4-614caffe09a0.png" alt="Control Unity UI">
+  <img width="80%" src="https://user-images.githubusercontent.com/47441314/113312392-34098e00-9345-11eb-9ec4-614caffe09a0.png" alt="Control Unity UI">
 </p>
 
 #### Easings and Animation Curve
@@ -20,7 +20,7 @@ You can easily set up animations using the easing functions.
 If you want to create complex animations, you can also use Animation Curve.
 
 <p align="center">
-  <img width=500 src="https://user-images.githubusercontent.com/47441314/113312417-3a980580-9345-11eb-815b-96baf0f10189.png" alt="Easings and Animation Curve">
+  <img width="60%" src="https://user-images.githubusercontent.com/47441314/113312417-3a980580-9345-11eb-815b-96baf0f10189.png" alt="Easings and Animation Curve">
 </p>
 
 Looping of animations is also possible (Repeat, Reverse, and PingPong are supported as loop types).
@@ -29,7 +29,7 @@ Looping of animations is also possible (Repeat, Reverse, and PingPong are suppor
 All clips and all parameters are blendable.
 
 <p align="center">
-  <img width=700 src="https://user-images.githubusercontent.com/47441314/113312482-4c79a880-9345-11eb-8e19-c6c85d2e1338.png" alt="Blending">
+  <img width="80%" src="https://user-images.githubusercontent.com/47441314/113312482-4c79a880-9345-11eb-8e19-c6c85d2e1338.png" alt="Blending">
 </p>
 
 ## Setup
