@@ -1,4 +1,5 @@
-﻿using UnityEngine.Playables;
+﻿using UnityEngine;
+using UnityEngine.Playables;
 
 namespace UnityUIPlayables
 {
@@ -30,7 +31,7 @@ namespace UnityUIPlayables
                 var time = (float) playableInput.GetTime();
                 var duration = (float) playableInput.GetDuration();
                 var progress = behaviour.EvaluateCurve(time, duration);
-
+                
                 if (inputWeight == 0)
                 {
                     continue;
