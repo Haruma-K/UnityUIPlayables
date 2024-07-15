@@ -1,5 +1,12 @@
 <h1 align="center">Unity UI Playables</h1>
 
+> [!WARNING]
+> From several perspectives, I recommend controlling UI animations with keyframes rather than clips. For reference, see this link:  
+> https://forum.unity.com/threads/animation-events-on-last-frame-arent-fired-in-timeline-when-its-the-last-frame-of-the-timeline.791258/.  
+> 
+> Therefore, this repository will be archived. When controlling the Timeline with keyframes, I strongly recommend using the following assets:  
+> https://assetstore.unity.com/packages/tools/animation/curvify-277062.
+
 Tracks and Clips for controlling the Unity UI (uGUI) with Timeline.
 
 <p align="center">
