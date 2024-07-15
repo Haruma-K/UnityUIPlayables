@@ -32,5 +32,23 @@ namespace UnityUIPlayables
                     throw new ArgumentOutOfRangeException();
             }
         }
+        
+        internal static Curve CreateFromEasing(EaseType easeType)
+        {
+            return new Curve
+            {
+                _curveType = CurveType.Easing,
+                _easeType = easeType
+            };
+        }
+        
+        internal static Curve CreateFromAnimationCurve(AnimationCurve animationCurve)
+        {
+            return new Curve
+            {
+                _curveType = CurveType.AnimationCurve,
+                _animationCurve = animationCurve
+            };
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace UnityUIPlayables
         [SerializeField] private LoopType _loopType;
         [SerializeField] private Curve _curve;
 
+        private readonly CurveEvaluateService _evaluateService = new();
+
         public float LoopDuration => _loopDuration;
 
         public LoopType LoopType => _loopType;
@@ -22,31 +24,13 @@ namespace UnityUIPlayables
         public float EvaluateCurve(float time, float duration)
         {
             var loopDuration = _loopDuration > 0 ? _loopDuration : duration;
-            var progress = time / loopDuration;
-            var ret = Mathf.Floor(progress) % 2 != 0;
-            switch (_loopType)
+            return _loopType switch
             {
-                case LoopType.Repeat:
-                    progress = Mathf.Repeat(progress, 1.0f);
-                    break;
-                case LoopType.Reverse:
-                    progress = Mathf.Repeat(progress, 1.0f);
-                    break;
-                case LoopType.PingPong:
-                    progress = Mathf.PingPong(progress, 1.0f);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-
-            progress = _curve.Evaluate(progress);
-            
-            if (_loopType == LoopType.Reverse & ret)
-            {
-                progress = 1 - progress;
-            }
-
-            return progress;
+                LoopType.Repeat => _evaluateService.EvaluateRepeat(_curve, time, loopDuration),
+                LoopType.Reverse => _evaluateService.EvaluateReverse(_curve, time, loopDuration),
+                LoopType.PingPong => _evaluateService.EvaluatePingPong(_curve, time, loopDuration),
+                _ => throw new ArgumentOutOfRangeException()
+            };
         }
     }
 }
